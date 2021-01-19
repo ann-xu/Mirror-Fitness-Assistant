@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        body {
+          font-family: sans-serif;
+          color: white;
+          display: grid;
+          height: 100vh;
+          place-items: normal;
+          background-color: black;
+        }
+
+        .flex {
+          display: flex;
+          flex-wrap: wrap;
+        }
+
+        .base-timer {
+          position: relative;
+          width: 500px;
+          height: 500px;
+          margin: 100px;
+        }
+
+        #exercises {
+            position: relative;
+            font-size: 50px;
+            height: 350px;
+        }
+
+        #full-timer-label {
+          position: relative;
+          padding-top: 50px;
+          font-size: 50px;
+        }
+
+        .top-exercise {
+          padding-top:100px;
+          color:grey;
+        }
+
+        .base-timer__svg {
+          transform: scaleX(-1);
+        }
+
+        .base-timer__circle {
+          fill: none;
+          stroke: none;
+        }
+
+        .base-timer__path-elapsed {
+          stroke-width: 7px;
+          stroke: grey;
+        }
+
+        .base-timer__path-remaining {
+          stroke-width: 7px;
+          stroke-linecap: round;
+          transform: rotate(90deg);
+          transform-origin: center;
+          transition: 1s linear all;
+          fill-rule: nonzero;
+          stroke: currentColor;
+        }
+
+        .base-timer__path-remaining.white {
+          color: white;
+        }
+
+        .base-timer__label {
+          position: absolute;
+          width: 500px;
+          height: 500px;
+          top: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 100px;
+        }
+    </style>
+
+</head>
+
+<body>
+<div id="app"></div>
+
+<script src="./workout.js"></script>
+
+</body>
+</html>
