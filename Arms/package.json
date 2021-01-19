@@ -1,0 +1,15 @@
+{
+  "name": "arms",
+  "version": "1.0.0",
+  "description": "10 min arms workout",
+  "main": "main arms.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "Ann Xu",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^11.2.0"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "fitassistant",
+  "version": "1.0.0",
+  "description": "workout fitness assistant",
+  "main": "main abs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "abs": "node -e 'require(\"./main\").startAbs()'",
+    "legs": "node -e 'require(\"./main\").startLegs()'",
+    "arms": "node -e 'require(\"./main\").startArms()'",
+    "a": "run-func main.js startAbs"
+  },
+  "author": "Ann Xu",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^11.2.0"
+  }
+}
